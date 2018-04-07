@@ -2,10 +2,11 @@
 
 namespace App\Models;
 
-use Moloquent;
-use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
+//use Moloquent;
+//use Illuminate\Database\Eloquent\Model;
 
-class Crud extends Moloquent
+class Crud extends Eloquent
 {
     protected $collection = 'crud';
 }
