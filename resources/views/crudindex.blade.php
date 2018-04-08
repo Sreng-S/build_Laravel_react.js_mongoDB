@@ -8,7 +8,7 @@
 <html>
 <head>
   <title>Crud trial</title>
-  <link href="/css/lib.css" rel="stylesheet">
+  {{--<link href="/css/app.css" rel="stylesheet">--}}
 </head>
 <body>
 <h1>Welcome to Library</h1>

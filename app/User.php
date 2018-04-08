@@ -14,11 +14,12 @@ class User extends Eloquent implements Authenticatable {
    *
    * @var array
    */
-  protected $connection = 'mongodb';
+//  protected $connection = 'mongodb';
 //    protected $collection = 'keywords';
   protected $fillable = [
     'name', 'email', 'password',
   ];
+  protected $dates = ['deleted_at'];
   
   /**
    * The attributes that should be hidden for arrays.
@@ -28,4 +29,8 @@ class User extends Eloquent implements Authenticatable {
   protected $hidden = [
     'password', 'remember_token',
   ];
+  
+  public function books(){
+    return $this->hasMany('Book');
+  }
 }

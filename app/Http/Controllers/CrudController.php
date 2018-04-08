@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Crud;
 use Illuminate\Http\Request;
-use App\Http\Requests;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Database\Eloquent\Collection;
+//use App\Http\Requests;
+//use Illuminate\Database\Eloquent\Collection;
 
 class CrudController extends Controller
 {

@@ -20,4 +20,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('crud', 'CrudController');
+Route::resource('books', 'BookController');
